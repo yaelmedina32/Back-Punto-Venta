@@ -1,0 +1,47 @@
+
+
+networks:
+  app-network:
+    external: true
+    name: dctires-net
+services:
+  mysqldb:
+    image: mysql:8.0
+    networks:
+      - app-network
+    container_name: mysqldb
+    restart: unless-stopped
+    env_file: ./.env
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+      - MYSQL_DATABASE=${DB_NAME}
+      - TZ=America/Mexico_City
+    ports:
+      - ${DB_PORT}:3306
+    volumes:
+      - db:/var/lib/mysql
+      - ./my.cnf:/etc/mysql/conf.d/my.cnf
+    command: --lower-case-table-names=1
+  api:
+    build: .
+    container_name: api
+    depends_on:
+      - mysqldb
+    links:
+      - mysqldb
+    ports:
+      - "0.0.0.0:4300:4300"
+    networks:
+      - app-network
+    environment:
+      - DB_HOST=mysqldb
+      - DB_PORT=${DB_PORT}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - HOST=${DB_HOST}
+      - PORT=${DB_PORT}
+      - DB_NAME=${DB_NAME}
+volumes:
+  db:
+
+
