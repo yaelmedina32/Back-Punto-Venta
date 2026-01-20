@@ -1,6 +1,6 @@
 # Backend Point of Sales
 
-![Node.js](https://img.shields.io/badge/Node.js-18.x-green)
+![Node.js](https://img.shields.io/badge/Node.js-22.x-green)
 ![Express](https://img.shields.io/badge/Express.js-Backend-lightgrey)
 ![MySQL](https://img.shields.io/badge/MySQL-Database-blue)
 ![Docker](https://img.shields.io/badge/Docker-Ready-blue)
