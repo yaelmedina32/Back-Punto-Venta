@@ -1,5 +1,12 @@
 # Backend Point of Sales
 
+![Node.js](https://img.shields.io/badge/Node.js-18.x-green)
+![Express](https://img.shields.io/badge/Express.js-Backend-lightgrey)
+![MySQL](https://img.shields.io/badge/MySQL-Database-blue)
+![Docker](https://img.shields.io/badge/Docker-Ready-blue)
+![JWT](https://img.shields.io/badge/Auth-JWT-orange)
+![Status](https://img.shields.io/badge/Status-Production%20Ready-success)
+
 Backend for Point of Sales for a small business called "DCTires" a tire store and inventory management in a real world scenario. This project is developed with Node.js, Express and MySQL.
 
 ## Context of the project
