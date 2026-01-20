@@ -66,9 +66,11 @@ src/
 - Run `docker-compose up --build`
 - The API will be available at `http://localhost:4300`
 
-## My Role in this project
-- I was responsible for the development of the backend of the Point of Sales project.
-- I implemented the RESTful API with Node.js and Express.
-- I designed and implemented the database schema with MySQL.
-- I used Docker and Docker Compose to containerize the application.
-- I made the frontend development to ensure a smooth integration of the two parts of the project.
+## My Role and responsabilities in this project 
+- Developed all stack in this project, including Node.js, Express, MySQL beacuase of the need of a scalable application.
+- Decided to containerize the application using Docker and Docker Compose to ensure a smooth deployment and scalability.
+- Made authentication process with JWT to ensure secure access to the API.
+- Implemented the RESTful API with Node.js and Express.
+- Designed and implemented the database schema with MySQL, all the tables and relationships based in the requirements of the business.
+- Rescued all the requirements of the business to ensure a smooth integration of the two parts of the project with constants meetings. 
+- Made the frontend development to ensure a smooth integration of the two parts of the project.
