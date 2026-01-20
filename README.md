@@ -1,6 +1,8 @@
 # Backend Point of Sales
 
-Backend for Point of Sales, developed with Node.js, Express and MySQL.
+Backend for Point of Sales for a small business called "DCTires" a tire store and inventory management. This project is developed with Node.js, Express and MySQL.
+
+DCTires System is a web application that allows the management of products, categories, clients, employees, sales, among other features, with all the features completly customized to the needs of the business. Making the sales process easier and more efficient.
 
 ## What is this project?
 - Managment of products, categories, clients, employees, sales, among other features.
