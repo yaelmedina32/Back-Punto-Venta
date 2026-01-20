@@ -72,6 +72,6 @@ app.use(api + 'marcas/', rutasCatalogos.marcas);
 app.use(api + 'configuraciones/', rutasConfiguraciones.usuarios);
 
 
-app.listen(4300 || 5000, '0.0.0.0', () => {
-	console.log('Server is running on port 4300 or 5000');
+app.listen(process.env.PORT || 4300, '0.0.0.0', () => {
+	console.log('Server is running on port ' + process.env.PORT || 4300);
 } );

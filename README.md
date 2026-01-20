@@ -6,6 +6,14 @@ Backend for Point of Sales for a small business called "DCTires" a tire store an
 
 The DCTires System is born because of the need of a small business called "DCTires" to manage their inventory and sales process. The business has a tire store and they need a system to manage their products, categories, clients, employees, sales, among other features.
 
+## Solved problems
+
+- The business needed a system to manage their inventory and sales process.
+- The business needed a system to manage their products, categories, clients, employees, sales, among other features.
+- The business needed a system to sale and purchase products quickly and easily.
+- The business needed a system to generate reports of sales and purchases.
+- The business needed a feature to send messages by WhatsApp to their clients.
+
 ## What is this project?
 - Managment of products, categories, clients, employees, sales, among other features.
 - Sales and purchases management.
@@ -50,10 +58,11 @@ src/
 - JWT_SECRET
 
 ## Installation
-- Clone the repository
+- Clone the repository (git clone https://github.com/yaelmedina32/Back-Punto-Venta.git) and navigate to the project directory.
 - Create a `.env` file in the root directory with the environment variables on the example provided in the repository.
-- Run `docker-compose up --build`
-- The API will be available at `http://localhost:4300`
+- Adjust the environment variables to match your local setup, such as DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME, HOST, PORT, JWT_SECRET.
+- Turn on the Docker compose in the root directory of the project by running `docker-compose up --build`
+- The API will be available at `http://localhost:4300` (or `http://localhost:PORT` if you changed the PORT in the .env file)
 
 ## My Role and responsabilities in this project 
 - Developed all stack in this project, including Node.js, Express, MySQL beacuase of the need of a scalable application.
