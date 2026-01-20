@@ -7,8 +7,28 @@ const rutas = express.Router();
 rutas.get('/imprimircotizacion/:productoid', productosController.getImprimirCotizacion);
 
 rutas.get('/cotizacion', productosController.getCotizacion);
-
+/**
+ * @swagger
+ * /productos:
+ *   get:
+ *     summary: Get all products
+ *     tags: [Products]
+ *     responses:
+ *       200:
+ *         description: List of products <{productoid, nombre, ancho, alto, roc, tamanorin, precioCompra, categoria, marca, modelo, letraVelocidad, servicios, nombrefiltro}>
+ */
 rutas.post('/productos', productosController.postProductos);
+
+/**
+ * @swagger
+ * /productos/servicios:
+ *   get:
+ *     summary: Get all services from the table "producto" where "categoria" is "Servicio"
+ *     tags: [Products]
+ *     responses:
+ *       200:
+ *         description: List of services <{productoid, nombre, precio}>
+ */
 
 rutas.get('/productos/servicios', productosController.getProductosServicios);
 

@@ -41,6 +41,13 @@ The DCTires System is born because of the need of a small business called "DCTir
 - MVC Pattern
 - Dockerized
 
+## API Documentation
+
+The API is documented using Swagger.
+
+Once the project is running, access:
+- `http://localhost:4300/api-docs` (or `http://localhost:PORT/api-docs` if you changed the PORT in the .env file)
+
 ## Project Structure
 
 ```bash

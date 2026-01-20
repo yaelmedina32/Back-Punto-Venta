@@ -1,6 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const auth = require('./routes/login/auth.router');
+const swaggerUi = require('swagger-ui-express');
+const swaggerSpec = require('./docs/swagger');
+const dotenv = require('dotenv');
+dotenv.config({ path: '.env' });
 
 const cors = require('cors');
 const verify = require('./middlewares/verificarToken.controller')
@@ -51,6 +55,8 @@ app.use(cors());
 
 const api = '/api/'
 app.use(api, auth);
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 app.use(verify)
 
