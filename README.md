@@ -1,8 +1,10 @@
 # Backend Point of Sales
 
-Backend for Point of Sales for a small business called "DCTires" a tire store and inventory management. This project is developed with Node.js, Express and MySQL.
+Backend for Point of Sales for a small business called "DCTires" a tire store and inventory management in a real world scenario. This project is developed with Node.js, Express and MySQL.
 
-DCTires System is a web application that allows the management of products, categories, clients, employees, sales, among other features, with all the features completly customized to the needs of the business. Making the sales process easier and more efficient.
+## Context of the project
+
+The DCTires System is born because of the need of a small business called "DCTires" to manage their inventory and sales process. The business has a tire store and they need a system to manage their products, categories, clients, employees, sales, among other features.
 
 ## What is this project?
 - Managment of products, categories, clients, employees, sales, among other features.
@@ -10,6 +12,7 @@ DCTires System is a web application that allows the management of products, cate
 - Reports of sales and purchases.
 - Users and roles management.
 - Authentication and authorization with JWT.
+- Dockerized the application to ensure a smooth deployment and scalability.
 
 ## STACK
 - Node.js
@@ -30,24 +33,9 @@ src/
 ├── assets/             # Static assets (logos)
 ├── configuraciones/    # Database and global configs
 ├── controladores/      # Controllers (Request/Response handling)
-│   ├── administracion/
-│   ├── catalogos/
-│   ├── configuraciones/
-│   ├── login/
-│   └── operaciones/
 ├── middlewares/        # Express middlewares (Auth)
 ├── routes/             # API Route definitions
-│   ├── administracion/
-│   ├── catalogos/
-│   ├── configuraciones/
-│   ├── login/
-│   └── operaciones/
 ├── servicios/          # Business logic and DB interactions
-│   ├── administracion/
-│   ├── catalogos/
-│   ├── configuraciones/
-│   ├── login/
-│   └── operaciones/
 └── index.js            # Entry point
 ```
 
@@ -63,6 +51,7 @@ src/
 
 ## Installation
 - Clone the repository
+- Create a `.env` file in the root directory with the environment variables on the example provided in the repository.
 - Run `docker-compose up --build`
 - The API will be available at `http://localhost:4300`
 
